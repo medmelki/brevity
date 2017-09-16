@@ -1,12 +1,15 @@
-
+/* Action buttons */
 .ActionBtn {
     width: 25px;
-    height: 25px;
+    height: 24px;
     background: white;
     border: solid 1px #00ACC1;
     display: flex;
     justify-content: center;
-    margin-right: 10px;
+}
+
+.table-header .ActionBtn:last-child {
+    margin-right: 0;
 }
 
 .ActionBtn i {
@@ -21,3 +24,72 @@
 .ActionBtn:hover i {
     color: white;
 }
+
+.table-header {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+.table-header .ActionBtn {
+    margin-right: 10px;
+}
+
+.table-header .btn-group {
+    padding: 0;
+}
+
+.table-container {
+    background: white;
+    padding: 20px;
+    border: solid 1px #e1e1e1;
+    height: 78vh;
+}
+
+/* Tables data */
+
+.data {
+}
+
+.data tr td {
+    color: #7d7d7d;
+    font-size: 12px;
+    padding: 8px;
+}
+
+tr td:last-child {
+    text-align: -webkit-right;
+}
+
+
+.data tr:last-child {
+    border-bottom: 1px solid rgb(236, 238, 239);
+}
+
+.data th:first-child,
+.data td:first-child {
+    padding-left: 0;
+}
+
+.data .dropdown {
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    padding-right: 10px;
+    box-sizing: border-box;
+    z-index: 1;
+    transform: translateX(-3em) translateY(-2em);
+    -webkit-transition: all 2s;
+    transition: all 2s;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content:hover {
+    display: block;
+}
+

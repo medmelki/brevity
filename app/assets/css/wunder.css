@@ -4632,11 +4632,12 @@ h2.title {
   .sidebar .sidebar-wrapper,
   .off-canvas-sidebar .sidebar-wrapper {
     position: relative;
-    height: calc(100vh - 75px);
+    height: calc(100vh - 110px) !important;
     overflow: auto;
     width: 260px;
     z-index: 4;
-    padding-bottom: 30px; }
+    /*padding-bottom: 30px; */
+  }
     .sidebar .sidebar-wrapper .dropdown .dropdown-backdrop,
     .off-canvas-sidebar .sidebar-wrapper .dropdown .dropdown-backdrop {
       display: none; }
@@ -6588,7 +6589,7 @@ select.form-control {
 
 /*
  *----------------------------------------------------------
- * File Upload  
+ * File Upload
  * ---------------------------------------------------------
  */
 .btn-file {
@@ -6706,7 +6707,7 @@ select.form-control {
 
 /*
  *----------------------------------------------------------
- * Alerts  
+ * Alerts
  * ---------------------------------------------------------
  */
 .alert {
@@ -6832,8 +6833,8 @@ select.form-control {
  */
 .table > thead > tr > th {
   border-bottom-width: 1px;
-  font-size: 1rem;
-  font-weight: 400;
+  /*font-size: 1rem;*/
+  /*font-weight: 400;*/
   color: inherit; }
 .table .radio,
 .table .checkbox {
@@ -6848,15 +6849,21 @@ select.form-control {
   padding: 3px;
   margin-top: 0;
   margin-bottom: 0; }
-.table > thead > tr > th,
-.table > tbody > tr > th,
+
 .table > tfoot > tr > th,
 .table > thead > tr > td,
-.table > tbody > tr > td,
 .table > tfoot > tr > td {
   padding: 12px 8px;
   vertical-align: middle;
   height: auto; }
+
+.table > thead > tr > th,
+.table > tbody > tr > th,
+.table > tbody > tr > td {
+  vertical-align: middle;
+  height: auto;
+  padding: 8px;
+}
 .table .th-description {
   max-width: 150px; }
 .table .td-price {
@@ -9011,7 +9018,7 @@ be a descendant of the grid when it is being dragged.
 
 /*
  *----------------------------------------------------------
- * Panel Styles  
+ * Panel Styles
  * ---------------------------------------------------------
  */
 .panel {
@@ -9733,7 +9740,7 @@ be a descendant of the grid when it is being dragged.
 
 /*
  *----------------------------------------------------------
- * Footer Styles  
+ * Footer Styles
  * ---------------------------------------------------------
  */
 footer {
@@ -11553,7 +11560,7 @@ footer {
  *--------------------------------------
  */
 .navbar[data-topbar-color="default"] {
-  background-color: #607D8B;
+  background-color: #292929;
   color: #FFFFFF;
   /*.logo-container .brand{
   	  color: $font-color;
@@ -11888,7 +11895,7 @@ footer {
 */
 /*
  *----------------------------------------------------------
- * Modal Styles  
+ * Modal Styles
  * ---------------------------------------------------------
  */
 .modal .modal-content {

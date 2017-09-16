@@ -1,0 +1,41 @@
+<div class="container-fluid">
+    <div class="table-header">
+        <p>PROJECTS</p>
+        <div class="btn-group">
+            <button class="ActionBtn"><i class="material-icons">add</i></button>
+            <button class="ActionBtn"><i class="material-icons">autorenew</i></button>
+        </div>
+    </div>
+
+    <div class="table-container">
+        <table class="table data">
+            <thead>
+            <tr>
+                <th>TITLE</th>
+                <th>ROLE</th>
+                <th>OWNER</th>
+                <th>ENABLED</th>
+                <th>LAST ACTIVITY</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr ng-repeat="project in $ctrl.projects">
+                <td>{{project.title}}</td>
+                <td>{{project.role}}</td>
+                <td>{{project.owner}}</td>
+                <td><input type="checkbox" ng-checked="project.enabled"/></td>
+                <td>{{project.lastActivity | date:'dd/MM/yyyy hh:mm'}}
+                </td>
+                <td>
+                    <div class="dropdown">
+                        <button class="ActionBtn dropbtn"><i class="material-icons">menu</i></button>
+                        <div class="dropdown-content">
+                            <button class="ActionBtn"><i class="material-icons">info</i></button>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
