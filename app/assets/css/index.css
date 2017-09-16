@@ -1,0 +1,23 @@
+
+.ActionBtn {
+    width: 25px;
+    height: 25px;
+    background: white;
+    border: solid 1px #00ACC1;
+    display: flex;
+    justify-content: center;
+    margin-right: 10px;
+}
+
+.ActionBtn i {
+    color: dimgrey;
+    font-size: 17px;
+}
+
+.ActionBtn:hover {
+    background: #00ACC1;
+}
+
+.ActionBtn:hover i {
+    color: white;
+}
