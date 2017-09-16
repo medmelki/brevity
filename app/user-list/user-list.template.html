@@ -1,0 +1,40 @@
+<div class="container-fluid">
+    <div class="table-header">
+        <p>USERS</p>
+        <div class="btn-group">
+            <button class="ActionBtn"><i class="material-icons">add</i></button>
+            <button class="ActionBtn"><i class="material-icons">autorenew</i></button>
+        </div>
+    </div>
+
+    <div class="table-container">
+        <table class="table data">
+            <thead>
+            <tr>
+                <th>NAME</th>
+                <th>EMAIL</th>
+                <th>ROLE</th>
+                <th>ENABLED</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr ng-repeat="user in $ctrl.users">
+                <td>{{user.name}}</td>
+                <td>{{user.email}}</td>
+                <td>{{user.role}}</td>
+                <td><input type="checkbox" ng-checked="user.enabled"/></td>
+                </td>
+                <td>
+                    <div class="dropdown">
+                        <button class="ActionBtn dropbtn"><i class="material-icons">menu</i></button>
+                        <div class="dropdown-content">
+                            <button class="ActionBtn"><i class="material-icons">info</i></button>
+                            <button class="ActionBtn"><i class="material-icons">edit</i></button>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
