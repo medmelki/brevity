@@ -1,0 +1,58 @@
+<div class="container-fluid">
+    <div class="table-header">
+        <p>LOCATIONS</p>
+        <div class="btn-group">
+            <button class="ActionBtn"><i class="material-icons">add</i></button>
+            <button class="ActionBtn"><i class="material-icons">autorenew</i></button>
+        </div>
+    </div>
+    <div style="display: flex; flex-direction: row">
+        <div id="map" style="width: 50%; height: calc(78vh - 70px);"></div>
+        <div style="width: 50%"class="table-container">
+            <table class="table data">
+                <thead>
+                <tr>
+                    <th>NAME</th>
+                    <th>TYPE</th>
+                    <th>ENABLED</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr ng-repeat="location in $ctrl.locations">
+                    <td>{{location.name}}</td>
+                    <td>{{location.type}}</td>
+                    <td><input type="checkbox" ng-checked="location.enabled"/></td>
+                    </td>
+                    <td>
+                        <div class="dropdown">
+                            <button class="ActionBtn dropbtn"><i class="material-icons">menu</i></button>
+                            <div class="dropdown-content">
+                                <button class="ActionBtn"><i class="material-icons">info</i></button>
+                                <button class="ActionBtn"><i class="material-icons">edit</i></button>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</div>
+
+<script>
+    function initMap() {
+        var uluru = {lat: -25.363, lng: 131.044};
+        var map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 4,
+            center: uluru
+        });
+        var marker = new google.maps.Marker({
+            position: uluru,
+            map: map
+        });
+    }
+</script>
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBz-yeDSbEEuS2PZiWn_6xQhPMVzTwDPgE&callback=initMap">
+</script>

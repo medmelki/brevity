@@ -9,5 +9,6 @@ angular.module('brevityApp', [
   'organizationList',
   'userList',
   'categoryList',
-  'configurationList'
+  'configurationList',
+  'locationList'
 ]);
