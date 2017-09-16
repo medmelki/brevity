@@ -1,0 +1,37 @@
+<div class="container-fluid">
+    <div class="table-header">
+        <p>DOWNLOADS</p>
+        <div class="btn-group">
+            <button class="ActionBtn"><i class="material-icons">autorenew</i></button>
+        </div>
+    </div>
+
+    <div class="table-container">
+        <table class="table data">
+            <thead>
+            <tr>
+                <th>FILE</th>
+                <th>SIZE</th>
+                <th>SENT</th>
+                <th>SENDER</th>
+                <th>PROJECT</th>
+                <th>STATUS</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr ng-repeat="download in $ctrl.downloads">
+                <td>{{download.file}}</td>
+                <td>{{download.size}}</td>
+                <td>{{download.sent}}</td>
+                <td>{{download.sender}}</td>
+                <td>{{download.project}}</td>
+                <td>{{download.status}}</td>
+                </td>
+                <td>
+                    <button class="ActionBtn dropbtn"><i class="material-icons">menu</i></button>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
