@@ -1,0 +1,40 @@
+<div class="container-fluid">
+    <div class="table-header">
+        <p>CATEGORIES</p>
+        <div class="btn-group">
+            <button class="ActionBtn"><i class="material-icons">add</i></button>
+            <button class="ActionBtn"><i class="material-icons">autorenew</i></button>
+        </div>
+    </div>
+
+    <div class="table-container">
+        <!-- TODO : move style to css file -->
+        <div class="row" style="margin-bottom: 20px; display: flex;justify-content: space-between">
+            <select class="col-md-10" disabled></select>
+            <button class="ActionBtn" style="width: 100px; opacity: 0.6;">Grant Access</button>
+        </div>
+        <table class="table data">
+            <thead>
+            <tr>
+                <th>NAME</th>
+                <th>ENABLED</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr ng-repeat="category in $ctrl.categories">
+                <td>{{category.name}}</td>
+                <td><input type="checkbox" ng-checked="category.enabled"/></td>
+                </td>
+                <td>
+                    <div class="dropdown">
+                        <button class="ActionBtn dropbtn"><i class="material-icons">menu</i></button>
+                        <div class="dropdown-content">
+                            <button class="ActionBtn"><i class="material-icons">info</i></button>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
