@@ -8,5 +8,6 @@ angular.module('brevityApp', [
   'downloadList',
   'organizationList',
   'userList',
-  'categoryList'
+  'categoryList',
+  'configurationList'
 ]);

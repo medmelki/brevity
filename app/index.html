@@ -34,6 +34,8 @@
     <script src="user-list/user-list.component.js"></script>
     <script src="category-list/category-list.module.js"></script>
     <script src="category-list/category-list.component.js"></script>
+    <script src="configuration-list/configuration-list.module.js"></script>
+    <script src="configuration-list/configuration-list.component.js"></script>
 </head>
 
 <body>
@@ -71,37 +73,6 @@
         <div class="content">
             <div ng-view></div>
         </div>
-        <!--<footer class="footer">-->
-        <!--<div class="container">-->
-        <!--<nav class="float-left">-->
-        <!--<ul>-->
-        <!--<li>-->
-        <!--<a href="#">-->
-        <!--Home-->
-        <!--</a>-->
-        <!--</li>-->
-        <!--<li>-->
-        <!--<a href="#">-->
-        <!--Company-->
-        <!--</a>-->
-        <!--</li>-->
-
-        <!--<li>-->
-        <!--<a href="#">-->
-        <!--Blog-->
-        <!--</a>-->
-        <!--</li>-->
-        <!--</ul>-->
-        <!--</nav>-->
-        <!--<p class="copyright float-right">-->
-        <!--&copy;-->
-        <!--<script>-->
-        <!--document.write(new Date().getFullYear())-->
-        <!--</script>-->
-        <!--<a href="#">Brevity, LLC.</a>-->
-        <!--</p>-->
-        <!--</div>-->
-        <!--</footer>-->
     </div>
     <nav class="sidebar">
         <div class="logo">
@@ -116,36 +87,16 @@
         </div>
         <div class="sidebar-wrapper">
             <ul class="nav nav-inside flex-column">
-                <!--  DASHBOARD MENU-->
+                <!--  Projects -->
                 <li class="nav-item">
                     <a class="nav-link" href="#!/projects">
                         <i class="material-icons">dashboard</i>
                         <p>
-                            Dashboard
+                            Projects
                         </p>
                     </a>
                 </li>
-                <!--  INGEST MENU-->
-                <li class="nav-item">
-                    <a class="nav-link collapsed" data-toggle="collapse" href="#ingest" aria-expanded="false">
-                        <i class="material-icons">input</i>
-                        <p>
-                            Ingest
-                            <i class="material-icons">arrow_drop_down</i>
-                        </p>
-                    </a>
-                    <div class="collapse" id="ingest" aria-expanded="false" style="height: 0;">
-                        <ul class="nav nav-inside flex-column">
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Ingest</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Workflows</a>
-                            </li>
-                        </ul>
-                    </div>
-                </li>
-                <!--  DOWNLOADS MENU-->
+                <!--  Downloads -->
                 <li class="nav-item">
                     <a class="nav-link" href="#!/downloads">
                         <i class="material-icons">assignment_returned</i>
@@ -175,8 +126,7 @@
                         </ul>
                     </div>
                 </li>
-
-                <!--  Orginizations-->
+                <!--  Organizations-->
                 <li class="nav-item">
                     <a class="nav-link collapsed" data-toggle="collapse" href="#Brevity_Organizations"
                        aria-expanded="false">
@@ -217,7 +167,7 @@
                         </ul>
                     </div>
                 </li>
-                <!--  Files-->
+                <!--  Categories-->
                 <li class="nav-item">
                     <a class="nav-link collapsed" data-toggle="collapse" href="#Brevity_Templates"
                        aria-expanded="false">
@@ -237,6 +187,15 @@
                             </li>
                         </ul>
                     </div>
+                </li>
+                <!--  Configuration -->
+                <li class="nav-item">
+                    <a class="nav-link" href="#!/configurations">
+                        <i class="material-icons">build</i>
+                        <p>
+                            Configuration
+                        </p>
+                    </a>
                 </li>
                 <!--  Help-->
                 <li class="nav-item">
@@ -258,7 +217,6 @@
                         </ul>
                     </div>
                 </li>
-                <!--  Menu Over-->
             </ul>
         </div>
     </nav>

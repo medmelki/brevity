@@ -1,0 +1,63 @@
+<style>
+    p, span {
+        font-size: 10px;
+        margin-bottom: 0 !important;
+    }
+
+    tr {
+        border: none !important;
+    }
+</style>
+
+<div class="container-fluid">
+    <div class="table-header">
+        <h5>CONFIGURATION</h5>
+    </div>
+
+    <div class="table-container" style="height: 200px;">
+        <h6>TRANSFERS</h6>
+        <br>
+        <div style="display: flex; width: 30%">
+            <div style="display: flex; flex-direction: column">
+                <p>Max number of current transfers</p>
+                <input type="number" style="width: 40%" value="2"/>
+            </div>
+
+            <div style="display: flex; flex-direction: column">
+                <p>Bandwidth limit (megabits per second)</p>
+                <input type="text" style="width: 50%" value="100"/>
+            </div>
+        </div>
+        <span>Download Location</span>
+        <div style="display: flex; justify-content: space-between">
+            <input value="C:\Users\Desktop" style="width: 95%;" type="text"/>
+            <button class="ActionBtn"><i class="material-icons">folder</i></button>
+        </div>
+
+    </div>
+
+    <div class="table-container" style="height: 190px; margin-top: 30px;">
+        <h6>CONNECTION ESTABLISHMENT</h6>
+        <p>TURN is enables for the organization, using turn.brevitycloud.net</p>
+        <table class="table" style="width: 300px">
+            <thead>
+            <tr>
+                <th>Override</th>
+                <th>TURN</th>
+                <th>Server</th>
+                <th>Username</th>
+                <th>Password</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td><input type="checkbox"></td>
+                <td><input type="checkbox" checked></td>
+                <td><input type="text" value="turn.brevitycloud.net"></td>
+                <td><input type="text" value="brevity"></td>
+                <td><input type="text" value="eughinveyp"></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

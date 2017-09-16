@@ -16,8 +16,8 @@ angular.module('brevityApp').config(['$locationProvider', '$routeProvider',
             template: '<user-list></user-list>'
         }).when('/categories', {
             template: '<category-list></category-list>'
-        }).when('/config', {
-            template: '<config></config>'
-        }).otherwise('/projects');
+        }).when('/configurations', {
+            template: '<configuration-list></configuration-list>'
+        })
     }
 ]);
