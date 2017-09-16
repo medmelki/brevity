@@ -5,5 +5,6 @@ angular.module('brevityApp', [
   'ngRoute',
   // 'core',
   'projectList',
-  'downloadList'
+  'downloadList',
+  'organizationList'
 ]);

@@ -1,0 +1,39 @@
+<div class="container-fluid">
+    <div class="table-header">
+        <p>ORGANIZATIONS</p>
+        <div class="btn-group">
+            <button class="ActionBtn"><i class="material-icons">add</i></button>
+            <button class="ActionBtn"><i class="material-icons">autorenew</i></button>
+        </div>
+    </div>
+
+    <div class="table-container">
+        <table class="table data">
+            <thead>
+            <tr>
+                <th>NAME</th>
+                <th>ROLE</th>
+                <th>ENABLED</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr ng-repeat="organization in $ctrl.organizations">
+                <td>{{organization.name}}</td>
+                <td>{{organization.role}}</td>
+                <td><input type="checkbox" ng-checked="organization.enabled"/></td>
+                </td>
+                <td>
+                    <div class="dropdown">
+                        <button class="ActionBtn dropbtn"><i class="material-icons">menu</i></button>
+                        <div class="dropdown-content">
+                            <button class="ActionBtn"><i class="material-icons">info</i></button>
+                            <button class="ActionBtn"><i class="material-icons">add</i></button>
+                            <button class="ActionBtn"><i class="material-icons">edit</i></button>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
